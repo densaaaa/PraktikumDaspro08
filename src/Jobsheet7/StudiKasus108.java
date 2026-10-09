@@ -6,7 +6,7 @@ public class StudiKasus108 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int hargaPerCup = 18000;
+        int hargaPerCup = 17000;
         int jumlahCup, uangBayar, totalHarga, totalBayar, kembalian, kurang, diskon;
 
         System.out.println("Masukkan jumlah cup : ");
@@ -16,8 +16,8 @@ public class StudiKasus108 {
 
         totalHarga = jumlahCup * hargaPerCup;
         diskon = 0;
-        if (totalHarga >= 100000) {
-            diskon = totalHarga * 10 / 100;
+        if (totalHarga >= 110000) {
+            diskon = totalHarga * 7 / 100;
         }
 
         totalBayar = totalHarga - diskon;
