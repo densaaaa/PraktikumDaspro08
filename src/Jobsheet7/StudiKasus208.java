@@ -1,3 +1,5 @@
+package Jobsheet7;
+
 import java.util.Scanner;
 
 public class StudiKasus208 {
@@ -25,11 +27,18 @@ public class StudiKasus208 {
                 } else {
                     System.out.println("Dana penghargaan tidak diberikan.");
                 }
-            } 
-        }
-        
-        
-        else {
+            } else if (jenis.equalsIgnoreCase("PKM")) {
+                System.out.print("Status pendanaan PKM (jika lolos 1 dan jika tidak lolos 0): ");
+                int pkm = sc.nextInt();
+                if (pkm == 1) {
+                    System.out.println("Dana penghargaan diberikan.");
+                } else {
+                    System.out.println("Dana penghargaan tidak diberikan.");
+                }
+            } else {
+                System.out.println("Kegiatan lainnya tidak memperoleh dana penghargaan.");
+            }
+        } else {
             System.out.println("Dokumen tidak lengkap.");
             System.out.println("Dana penghargaan tidak diberikan.");
         }
