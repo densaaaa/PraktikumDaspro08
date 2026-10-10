@@ -3,7 +3,7 @@ nama    : Denis Risqi Allaludin
 nim     : 264107020015
 kelas   : 1E
 
-Hasil Uji Studi Kasus 2 oleh <Aurelius Onara V.J.T>
+Hasil Uji Studi Kasus 2 oleh Aurelius Onara V.J.T
 | No | Jenis | Dokumen | Juara/Dana   | Output     | Sesuai? |
 |----|-------|---------|--------------|------------|---------|
 | 1  |Barkoma|    3    |     1        |Tidak berhak| Ya      |
