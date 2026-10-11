@@ -3,6 +3,8 @@ nama    : Denis Risqi Allaludin
 nim     : 264107020015
 kelas   : 1E
 
+p       : 08
+
 Hasil Uji Studi Kasus 2 oleh Aurelius Onara V.J.T
 | No | Jenis | Dokumen | Juara/Dana   | Output     | Sesuai? |
 |----|-------|---------|--------------|------------|---------|
@@ -10,4 +12,4 @@ Hasil Uji Studi Kasus 2 oleh Aurelius Onara V.J.T
 | 2  |Mandiri|    4    |     0        |Tidak berhak| Ya      |
 | 3  |  PKM  |    4    |     1        |   Berhak   | Ya      |
 | 4  |Lainnya|    4    |tdk ditanyakan|Tidak berhak| Ya      |
->>>>>>> a20db39ec4dd60fda939682f0394b600137b19d7
+
