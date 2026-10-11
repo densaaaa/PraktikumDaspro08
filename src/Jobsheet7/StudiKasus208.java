@@ -26,7 +26,15 @@ public class StudiKasus208 {
                 } else {
                     System.out.println("Dana penghargaan tidak diberikan.");
                 }
-            }  else if (jenis.equals("LAINNYA")) {
+            } else if (jenis.equals("PKM")) {
+                System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak lolos): ");
+                int pkm = sc.nextInt();
+                if (pkm == 1) {
+                    System.out.println("Dana penghargaan diberikan.");
+                } else {
+                    System.out.println("Dana penghargaan tidak diberikan.");
+                }
+            } else if (jenis.equals("LAINNYA")) {
                 System.out.println("Kegiatan lainnya tidak memperoleh dana penghargaan.");
             } else {
                 System.out.println("Jenis kegiatan tidak valid.");
