@@ -13,7 +13,7 @@ public class Tugas2 {
             jenis = sc.nextInt();
 
             if (jenis == 1 || jenis == 2) {
-                System.out.print("Masukkan durasi parkir (jam): ");
+                System.out.print("Masukkan durasi parkir (Jam): ");
                 durasi = sc.nextInt();
 
                 if (jenis == 1) {
