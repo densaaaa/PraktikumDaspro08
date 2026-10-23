@@ -6,48 +6,48 @@ import java.util.Scanner;
 public class Tugas1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int hargaTiket = 44000;
-        int jumlahTiket, totalTiket = 0, totalPenjualan = 0;
+
+        int hargaTiket = 50000;
+        int jumlahTiket;
+        int totalTiket = 0;
+        int totalPenjualan = 0;
+        int harga;
         String input;
 
         while (true) {
-            System.out.print("Masukkan jumlah tiket ('batal' untuk selesai): ");
+            System.out.print("Masukkan jumlah tiket (ketik batal untuk selesai): ");
             input = sc.nextLine();
 
             if (input.equalsIgnoreCase("batal")) {
-                System.out.println("Selesai memasukkan data pelanggan.");
                 break;
             }
 
-            try {
-                jumlahTiket = Integer.parseInt(input);
-            } catch (NumberFormatException e) {
-                System.out.println("Input tidak valid. Masukkan angka atau 'batal'!");
-                continue;
-            }
-
-            if (jumlahTiket < 0) {
-                System.out.println("Jumlah tiket tidak valid. Masukkan lagi!");
-                continue;
-            }
+            jumlahTiket = Integer.parseInt(input);
 
             if (jumlahTiket == 0) {
-                break;
+                System.out.println("Jumlah tiket harus lebih dari 0!");
+                continue;
             }
 
-            int harga = jumlahTiket * hargaTiket;
-            if (jumlahTiket > 8) {
-                harga = harga - (harga * 23 / 100);
-            } else if (jumlahTiket > 6) {
-                harga = harga - (harga * 3 / 100);
+            harga = jumlahTiket * hargaTiket;
+
+            if (jumlahTiket > 10) {
+                harga = harga - (harga * 15 / 100);
+            } else if (jumlahTiket > 4) {
+                harga = harga - (harga * 10 / 100);
             }
 
-            totalTiket += jumlahTiket;
-            totalPenjualan += harga;
-            System.out.println("Jumlah tiket pelanggan berhasil dicatat.");
+            totalTiket = totalTiket + jumlahTiket;
+            totalPenjualan = totalPenjualan + harga;
+
+            System.out.println("Harga tiket: Rp" + harga);
+            System.out.println("Data berhasil dicatat.");
+            System.out.println();
         }
 
+        System.out.println("\n===== HASIL PENJUALAN =====");
         System.out.println("Total tiket terjual: " + totalTiket);
-        System.out.println("Total penjualan: Rp " + totalPenjualan);
+        System.out.println("Total penjualan: Rp" + totalPenjualan);
+
     }
 }
