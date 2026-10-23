@@ -7,7 +7,7 @@ public class Tugas1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int hargaTiket = 50000;
+        int hargaTiket = 44000;
         int jumlahTiket;
         int totalTiket = 0;
         int totalPenjualan = 0;
@@ -31,10 +31,10 @@ public class Tugas1 {
 
             harga = jumlahTiket * hargaTiket;
 
-            if (jumlahTiket > 10) {
-                harga = harga - (harga * 15 / 100);
-            } else if (jumlahTiket > 4) {
-                harga = harga - (harga * 10 / 100);
+            if (jumlahTiket > 8) {
+                harga = harga - (harga * 23 / 100);
+            } else if (jumlahTiket > 6) {
+                harga = harga - (harga * 3 / 100);
             }
 
             totalTiket = totalTiket + jumlahTiket;
