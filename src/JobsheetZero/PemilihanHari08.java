@@ -1,4 +1,4 @@
-package Jobsheet4;
+package JobsheetZero;
 
 import java.util.Scanner;
 

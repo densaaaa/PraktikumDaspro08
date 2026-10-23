@@ -1,5 +1,4 @@
-package latihan;
-
+package Latihan;
 import java.util.Scanner;
 
 public class StudiKasusWarung {

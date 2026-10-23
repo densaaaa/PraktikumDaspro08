@@ -1,4 +1,5 @@
 // P = 8
+package Jobsheet7;
 
 import java.util.Scanner;
 
