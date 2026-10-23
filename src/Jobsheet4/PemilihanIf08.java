@@ -1,11 +1,10 @@
-package Jobsheet42;
+package Jobsheet5;
 
 import java.util.Scanner;
 
-public class Tugas1Pemilihan08 {
-
+public class PemilihanIf08 {
     public static void main(String[] args) {
-
+        
         Scanner sc = new Scanner(System.in);
 
         System.out.println("--- CETAK KRS SIAKAD ----");
@@ -13,10 +12,9 @@ public class Tugas1Pemilihan08 {
 
         boolean uktLunas = sc.nextBoolean();
 
-        String pesan = uktLunas
-                ? "PEMBAYARAN UKT TERVERIFIKASI\nSILAKAN CETAK KRS DAN MINTA TTD DPA"
-                : "SILAKAN BAYAR UKT TERLEBIH DAHULU";
-
-        System.out.println(pesan);
+        if (uktLunas){
+            System.out.println("PEMBAYARAN UKT TERVERIFIKASI");
+            System.out.println("SILAKAN CETAK KRS DAN MINTA TTD DPA");
+        }    
     }
 }
