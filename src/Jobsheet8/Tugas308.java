@@ -1,6 +1,5 @@
 package Jobsheet8;
 
-
 import java.util.Scanner;
 
 public class Tugas308 {
@@ -22,6 +21,7 @@ public class Tugas308 {
         int totalBarangSemua = 0;
         int barangTerbanyak = -1;
         int tokoTerbaik = 1;
+        String rekapToko = ""; 
 
         while (toko <= jumlahToko) {
             int jumlahPelanggan;
@@ -55,7 +55,7 @@ public class Tugas308 {
                 pelanggan++;
             }
 
-            System.out.println("Toko " + toko + " - pelanggan: " + jumlahPelanggan + ", total barang: " + totalBarangToko);
+            rekapToko = rekapToko + "Toko " + toko + " - pelanggan: " + jumlahPelanggan + ", total barang: " + totalBarangToko + "\n";
 
             totalBarangSemua = totalBarangSemua + totalBarangToko;
 
@@ -67,9 +67,9 @@ public class Tugas308 {
             toko++;
         }
 
+        System.out.println();
+        System.out.print(rekapToko);
         System.out.println("Total barang seluruh toko: " + totalBarangSemua);
         System.out.println("Toko dengan barang terbanyak: " + tokoTerbaik);
-
     }
 }
-
