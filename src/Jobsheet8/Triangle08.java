@@ -18,6 +18,16 @@ public class Triangle08 {
             }
             System.out.println();
             i++;
+        }        
+        i = n;
+        while (i >= 1) {
+            int j = 1;
+            while (j <= i) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i--;
         }
     }
 }
