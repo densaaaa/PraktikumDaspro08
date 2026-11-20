@@ -24,5 +24,5 @@ public class ArrayBilangan08 {
     }
 }
 
-// P = 08
+// P = 8
 
