@@ -33,12 +33,11 @@ public class TamanRekreasi_08 {
             System.out.println("Pilihan tidak tersedia");
         }
 
-        if (tiket <= 9 || tiket >= 9 ){
+        if (tiket <= 9 && tiket >= 9 ){
             System.out.println("Anda tidak mendapatkan diskon");
         }else {
             System.out.println("Anda dapat diskon 10%");
         }
-
     }   
 }
 
