@@ -29,10 +29,15 @@ public class BioskopWithScanner08 {
                 System.out.print("Masukkan kolom: ");
                 kolom = sc.nextInt();
                 sc.nextLine();
-                
-                penonton[baris - 1 ][kolom - 1] = nama;
 
-                System.out.println("data penonton berhasil ditambahkan: ");
+                if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
+
+                    System.out.println("Nomor baris atau kolom tidak tersedia!");
+
+                } else {
+                    penonton[baris - 1][kolom - 1] = nama;
+                    System.out.println("Data penonton berhasil ditambahkan!");
+                }
 
             } else if (menu == 2) {
                 System.out.println("\n===== DAFTAR PENONTON =====");
