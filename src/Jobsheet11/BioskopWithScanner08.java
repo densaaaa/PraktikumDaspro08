@@ -1,3 +1,4 @@
+
 package Jobsheet11;
 
 import java.util.Scanner;
@@ -23,20 +24,28 @@ public class BioskopWithScanner08 {
                 System.out.print("Masukkan nama: ");
                 nama = sc.nextLine();
 
-                System.out.print("Masukkan baris: ");
-                baris = sc.nextInt();
+                while (true) {
+                    System.out.print("Masukkan baris: ");
+                    baris = sc.nextInt();
 
-                System.out.print("Masukkan kolom: ");
-                kolom = sc.nextInt();
-                sc.nextLine();
+                    System.out.print("Masukkan kolom: ");
+                    kolom = sc.nextInt();
+                    sc.nextLine();
 
-                if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
+                    if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
 
-                    System.out.println("Nomor baris atau kolom tidak tersedia!");
+                        System.out.println("Nomor baris atau kolom tidak tersedia!");
 
-                } else {
-                    penonton[baris - 1][kolom - 1] = nama;
-                    System.out.println("Data penonton berhasil ditambahkan!");
+                    } else if (penonton[baris - 1][kolom - 1] != null) {
+
+                        System.out.println("Maaf, kursi sudah terisi!");
+                        System.out.println("Silakan pilih kursi lain.");
+
+                    } else {
+                        penonton[baris - 1][kolom - 1] = nama;
+                        System.out.println("Data penonton berhasil ditambahkan!");
+                        break;
+                    }
                 }
 
             } else if (menu == 2) {
